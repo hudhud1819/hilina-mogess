@@ -1,0 +1,505 @@
+/* ===================== FORM 016 CSS ===================== */
+/* Internal Audit Program Form Styles */
+
+.form016-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+}
+
+.form016-form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Year Section */
+.form016-year-section {
+  margin: 25px 0 15px 0;
+  padding: 10px 0;
+  border-bottom: 2px solid #000000;
+}
+
+.year-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.year-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.year-input {
+  padding: 10px 12px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 120px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.year-input:focus {
+  outline: none;
+  border-color: #0066b3;
+  box-shadow: 0 0 0 2px rgba(0, 102, 179, 0.1);
+}
+
+/* Table Container */
+.form016-table-container {
+  margin: 25px 0;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.form016-main-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  table-layout: fixed;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Column Widths - Balanced with Form015 proportions */
+.col-sn {
+  width: 50px !important;
+  min-width: 50px;
+  max-width: 50px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+.col-directorate {
+  width: 200px !important;
+  min-width: 200px;
+  max-width: 200px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.col-year {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+.col-month {
+  width: 75px !important;
+  min-width: 75px;
+  max-width: 75px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Table Rows */
+.form016-main-table th,
+.form016-main-table td {
+  border: 1px solid #000000;
+  padding: 10px 8px;
+  text-align: center;
+  vertical-align: middle;
+  height: 45px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.form016-main-table th {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #000000;
+  font-weight: bold;
+}
+
+.header-row th {
+  font-size: 14px;
+  height: 60px;
+}
+
+.months-header-row th {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 4px;
+  border-top: 1px solid #000000;
+}
+
+/* Input Styles */
+.directorate-input {
+  width: 100%;
+  padding: 10px 8px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 13px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.directorate-input:focus {
+  outline: none;
+  border-color: #0066b3;
+  box-shadow: 0 0 0 2px rgba(0, 102, 179, 0.1);
+}
+
+.month-select {
+  width: 100%;
+  padding: 10px 4px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.month-select:focus {
+  outline: none;
+  border-color: #0066b3;
+}
+
+/* Serial Number */
+.serial-number {
+  font-weight: bold;
+  color: #000000;
+  font-size: 14px;
+}
+
+/* Abbreviation Section */
+.form016-abbreviation-section {
+  margin: 20px 0;
+  padding: 15px 20px;
+  background-color: #f8f9fa;
+  border-top: 2px solid #000000;
+  font-size: 13px;
+  color: #000000;
+}
+
+.abbreviation-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.abbreviation-item {
+  font-size: 13px;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.abbreviation-item strong {
+  font-weight: bold;
+  color: #0066b3;
+}
+
+.abbreviation-separator {
+  color: #666666;
+}
+
+/* Row Actions */
+.form016-row-actions {
+  margin: 20px 0;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border-top: 1px solid #e9ecef;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.abrev{
+    justify-content: center;
+    text-align: center;
+}
+.abrv{
+     justify-content: center;
+    text-align: center;
+
+}
+.abre{
+     justify-content: center;
+    text-align: center;
+}
+
+.add-row-btn,
+.remove-row-btn {
+  padding: 10px 24px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.add-row-btn:hover:not(:disabled) {
+  background-color: #0066b3;
+  color: #ffffff;
+  border-color: #004a8a;
+}
+
+.remove-row-btn:hover:not(:disabled) {
+  background-color: #dc3545;
+  color: #ffffff;
+  border-color: #c82333;
+}
+
+.add-row-btn:disabled,
+.remove-row-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Top Back Button */
+.form016-top-back-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.form016-back-btn {
+  padding: 10px 24px;
+  border: 2px solid #6c757d;
+  border-radius: 4px;
+  background-color: #6c757d;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.form016-back-btn:hover:not(:disabled) {
+  background-color: #5a6268;
+  border-color: #5a6268;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Actions */
+.form016-actions {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #e9ecef;
+}
+
+.form016-action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form016-cancel-btn {
+  padding: 12px 24px;
+  border: 2px solid #6c757d;
+  border-radius: 4px;
+  background-color: #6c757d;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 120px;
+  transition: all 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.form016-save-btn {
+  padding: 12px 24px;
+  border: 2px solid #ff9800;
+  border-radius: 4px;
+  background-color: #ff9800;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 140px;
+  transition: all 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.form016-submit-btn {
+  padding: 12px 24px;
+  border: 2px solid #0066b3;
+  border-radius: 4px;
+  background-color: #0066b3;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 200px;
+  transition: all 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.form016-cancel-btn:hover:not(:disabled) {
+  background-color: #5a6268;
+  border-color: #5a6268;
+  transform: translateY(-1px);
+}
+
+.form016-save-btn:hover:not(:disabled) {
+  background-color: #f57c00;
+  border-color: #f57c00;
+  transform: translateY(-1px);
+}
+
+.form016-submit-btn:hover:not(:disabled) {
+  background-color: #0056a3;
+  border-color: #004a8a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 102, 179, 0.2);
+}
+
+.form016-cancel-btn:disabled,
+.form016-save-btn:disabled,
+.form016-submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .col-directorate {
+    width: 180px !important;
+    min-width: 180px;
+    max-width: 180px;
+  }
+  
+  .col-month {
+    width: 70px !important;
+    min-width: 70px;
+    max-width: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .form016-main-table {
+    font-size: 12px;
+  }
+  
+  .col-directorate {
+    width: 160px !important;
+    min-width: 160px;
+    max-width: 160px;
+  }
+  
+  .col-month {
+    width: 65px !important;
+    min-width: 65px;
+    max-width: 65px;
+  }
+  
+  .directorate-input,
+  .month-select {
+    font-size: 12px;
+    padding: 8px 4px;
+  }
+  
+  .form016-action-buttons {
+    flex-direction: column;
+  }
+  
+  .form016-cancel-btn,
+  .form016-save-btn,
+  .form016-submit-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .form016-year-section {
+    margin-bottom: 10px;
+  }
+  
+  .abbreviation-row {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .abbreviation-separator {
+    display: none;
+  }
+  
+  .form016-row-actions {
+    flex-direction: column;
+  }
+  
+  .add-row-btn,
+  .remove-row-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .form016-main-table th,
+  .form016-main-table td {
+    padding: 8px 4px;
+    font-size: 11px;
+  }
+  
+  .col-directorate {
+    width: 140px !important;
+    min-width: 140px;
+    max-width: 140px;
+  }
+  
+  .col-month {
+    width: 55px !important;
+    min-width: 55px;
+    max-width: 55px;
+  }
+  
+  .directorate-input,
+  .month-select {
+    font-size: 11px;
+    padding: 6px 3px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .form016-container {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .form016-table-container {
+    overflow: visible;
+    border: 2px solid #000000;
+  }
+  
+  .form016-main-table {
+    page-break-inside: avoid;
+  }
+  
+  .form016-actions,
+  .form016-row-actions,
+  .form016-top-back-btn {
+    display: none;
+  }
+  
+  .directorate-input,
+  .month-select {
+    border: 1px solid #000000 !important;
+    background-color: transparent !important;
+    color: #000000 !important;
+  }
+}

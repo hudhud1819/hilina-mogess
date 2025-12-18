@@ -1,0 +1,435 @@
+/* ========================================================================= */
+/* OUTGOING DOCUMENT FORM SPECIFIC STYLES                                   */
+/* ========================================================================= */
+
+/* ========================================================================= */
+/* 1. MAIN CONTAINER                                                        */
+/* ========================================================================= */
+.outgoing-doc-registration-container {
+  width: 1200px; /* Changed to match document header width */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 40px;
+}
+
+/* ========================================================================= */
+/* 2. PART SECTIONS - Like Form01                                           */
+/* ========================================================================= */
+.outgoing-doc-registration-container .part-section {
+  border: 2px solid #333;
+  margin: 25px 0;
+  background-color: white;
+}
+
+.outgoing-doc-registration-container .outgoing-doc-section {
+  border: 2px solid #333;
+}
+
+.outgoing-doc-registration-container .part-header {
+  background-color: #e0e0e0;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: #333;
+}
+
+/* ========================================================================= */
+/* 3. PAGE CONTENT                                                          */
+/* ========================================================================= */
+.outgoing-doc-registration-container .page-content {
+  padding: 20px;
+}
+
+.outgoing-doc-registration-container .outgoing-doc-content {
+  padding: 20px;
+}
+
+/* ========================================================================= */
+/* 4. REGISTRATION TABLE                                                    */
+/* ========================================================================= */
+.outgoing-doc-registration-container .registration-table-container {
+  margin: 20px 0;
+  overflow-x: auto;
+  position: relative;
+}
+
+.outgoing-doc-registration-container .form-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.outgoing-doc-registration-container .outgoing-doc-table th, 
+.outgoing-doc-registration-container .outgoing-doc-table td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  height: 40px;
+}
+
+.outgoing-doc-registration-container .outgoing-doc-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #333;
+}
+
+.outgoing-doc-registration-container .outgoing-doc-table td input[type="text"], 
+.outgoing-doc-registration-container .outgoing-doc-table td input[type="date"] {
+  width: 100%;
+  border: none;
+  padding: 6px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: transparent;
+}
+
+.outgoing-doc-registration-container .outgoing-doc-table td input[type="text"]:focus, 
+.outgoing-doc-registration-container .outgoing-doc-table td input[type="date"]:focus {
+  outline: none;
+  background-color: #f8f8f8;
+}
+
+/* S/N column width */
+.outgoing-doc-registration-container .outgoing-doc-table tr td:first-child,
+.outgoing-doc-registration-container .outgoing-doc-table tr th:first-child {
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
+}
+
+/* ========================================================================= */
+/* 5. PLUS (+) ADD ROW BUTTON                                               */
+/* ========================================================================= */
+.outgoing-doc-registration-container .add-row-button.plus-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  left: 0;
+  margin: 10px 0 20px auto;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.outgoing-doc-registration-container .add-row-button.plus-button:hover:not(:disabled) {
+  background-color: #45a049;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.outgoing-doc-registration-container .add-row-button.plus-button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.outgoing-doc-registration-container .add-row-button.plus-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Tooltip style */
+.outgoing-doc-registration-container .add-row-button.plus-button::after {
+  content: 'Add New Row';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  z-index: 10;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.outgoing-doc-registration-container .add-row-button.plus-button:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ========================================================================= */
+/* 6. FORM ACTION BUTTONS - Like Form01                                     */
+/* ========================================================================= */
+.outgoing-doc-registration-container .form-action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px 0;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 15px;
+}
+
+/* Cancel button */
+.outgoing-doc-registration-container .btn-cancel {
+  padding: 10px 25px;
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.outgoing-doc-registration-container .btn-cancel:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+/* Submit button */
+.outgoing-doc-registration-container .btn-submit {
+  padding: 10px 25px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.outgoing-doc-registration-container .btn-submit:hover:not(:disabled) {
+  background-color: #0052a3;
+}
+
+.outgoing-doc-registration-container .btn-cancel:disabled, 
+.outgoing-doc-registration-container .btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ========================================================================= */
+/* 7. ERROR AND SUCCESS MESSAGES - Like Form01                              */
+/* ========================================================================= */
+.outgoing-doc-registration-container .form-error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  border-left: 4px solid #c62828;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.outgoing-doc-registration-container .form-error-message .close-error {
+  background: none;
+  border: none;
+  color: #c62828;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+  line-height: 1;
+}
+
+.outgoing-doc-registration-container .form-success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  border-left: 4px solid #2e7d32;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* ========================================================================= */
+/* 8. FOOTER NOTES - Like Form01                                            */
+/* ========================================================================= */
+.outgoing-doc-registration-container .footer-notes {
+  border: 3px solid #333;
+  margin: 20px 0 30px;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 12px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.outgoing-doc-registration-container .amharic-note {
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.outgoing-doc-registration-container .english-note {
+  font-weight: bold;
+  margin: 0;
+  color: #cc0000;
+}
+
+/* ========================================================================= */
+/* 9. RESPONSIVE STYLES                                                     */
+/* ========================================================================= */
+@media (max-width: 1250px) {
+  .outgoing-doc-registration-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .outgoing-doc-registration-container {
+    padding: 15px;
+  }
+  
+  .outgoing-doc-registration-container .part-section {
+    margin: 20px 0;
+  }
+  
+  .outgoing-doc-registration-container .page-content {
+    padding: 15px;
+  }
+  
+  .outgoing-doc-registration-container .outgoing-doc-table {
+    font-size: 11px;
+  }
+  
+  .outgoing-doc-registration-container .outgoing-doc-table th, 
+  .outgoing-doc-registration-container .outgoing-doc-table td {
+    padding: 6px;
+    font-size: 11px;
+  }
+  
+  .outgoing-doc-registration-container .form-action-buttons {
+    margin: 30px 0;
+  }
+  
+  .outgoing-doc-registration-container .footer-notes {
+    margin: 20px 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .outgoing-doc-registration-container {
+    padding: 10px;
+  }
+  
+  .outgoing-doc-registration-container .part-section {
+    margin: 15px 0;
+  }
+  
+  .outgoing-doc-registration-container .page-content {
+    padding: 10px;
+  }
+  
+  .outgoing-doc-registration-container .registration-table-container {
+    overflow-x: scroll;
+  }
+  
+  .outgoing-doc-registration-container .outgoing-doc-table {
+    min-width: 1200px;
+  }
+  
+  .outgoing-doc-registration-container .form-action-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .outgoing-doc-registration-container .btn-cancel, 
+  .outgoing-doc-registration-container .btn-submit {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .outgoing-doc-registration-container .form-error-message,
+  .outgoing-doc-registration-container .form-success-message {
+    margin: 15px 0;
+    padding: 12px 15px;
+  }
+  
+  .outgoing-doc-registration-container .footer-notes {
+    margin: 15px 0 20px;
+    font-size: 11px;
+  }
+  
+  .outgoing-doc-registration-container .add-row-button.plus-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+  }
+  
+  /* Adjust tooltip for mobile */
+  .outgoing-doc-registration-container .add-row-button.plus-button::after {
+    bottom: auto;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .outgoing-doc-registration-container {
+    padding: 10px;
+  }
+  
+  .outgoing-doc-registration-container .part-section {
+    margin: 10px 0;
+  }
+  
+  .outgoing-doc-registration-container .page-content {
+    padding: 8px;
+  }
+  
+  .outgoing-doc-registration-container .part-header {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  
+  .outgoing-doc-registration-container .form-action-buttons {
+    padding: 15px 0;
+    margin: 15px 0;
+  }
+  
+  .outgoing-doc-registration-container .add-row-button.plus-button {
+    width: 45px;
+    height: 45px;
+    font-size: 26px;
+    bottom: 15px;
+    right: 15px;
+  }
+}

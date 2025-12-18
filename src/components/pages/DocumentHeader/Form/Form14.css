@@ -1,0 +1,744 @@
+/* ========================================================================= */
+/* 2. FORM BODY CONTAINER - MATCHES DOCUMENT HEADER SIZE EXACTLY            */
+/* ========================================================================= */
+
+.service-request-form-014.srf-document-container {
+    width: 1200px; /* CHANGE FROM max-width TO width */
+    margin: 0 auto; /* Centers it if needed */
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 40px;
+    background-color: white; /* Ensure same background */
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* ADDED: Creates space between DocumentHeader and Form Body */
+  }
+  
+  /* If you want to keep responsiveness for smaller screens: */
+  @media (max-width: 1250px) {
+    .service-request-form-014.srf-document-container {
+      width: 100%;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-request-form-014.srf-document-container {
+      padding: 0 15px;
+    }
+  }
+  
+  /* ========================================================================= */
+  /* 3. FORM BODY - MAIN CONTENT AREA WITH GAP                                */
+  /* ========================================================================= */
+  
+  .service-request-form-014-body.srf-form-body-container {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0; /* Reset since gap is handled by parent */
+    padding-top: 20px; /* ADDED: Extra padding at top of form body */
+    border-top: 1px solid #e0e0e0; /* ADDED: Visual separator */
+  }
+  
+  /* ========================================================================= */
+  /* 4. FORM LAYOUT STRUCTURE                                                 */
+  /* ========================================================================= */
+  
+  .service-request-form-014-part-section.srf-part-section {
+    border: 2px solid black;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px; /* ADDED: Space above first section */
+  }
+  
+  .service-request-form-014-part-header.srf-part-header {
+    background-color: #e0e0e0;
+    padding: 8px 10px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+  }
+  
+  /* Part A Specific Styles */
+  .service-request-form-014-part-section {
+    padding-bottom: 10px;
+  }
+  
+  .service-request-form-014-form-row-group.srf-form-row-group {
+    padding: 12px 10px; /* CHANGED: Increased vertical padding */
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 8px; /* ADDED: Space between form groups */
+  }
+  
+  .service-request-form-014-form-row-group.srf-form-row-group:last-child {
+    border-bottom: none; /* Remove border from last item */
+  }
+  
+  .service-request-form-014-form-row-group.srf-form-row-group p {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+  
+  .service-request-form-014-field-row.srf-field-row {
+    display: flex;
+    gap: 30px; /* INCREASED: More space between fields */
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px; /* ADDED: Space above field row */
+  }
+  
+  .service-request-form-014-field.srf-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* INCREASED: More space between label and input */
+  }
+  
+  .service-request-form-014-label {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 3px;
+    display: block; /* ADDED: Ensure proper spacing */
+  }
+  
+  /* ========================================================================= */
+  /* 5. INPUT FIELD STYLES                                                    */
+  /* ========================================================================= */
+  
+  /* General Input Reset */
+  .service-request-form-014 input,
+  .service-request-form-014 textarea {
+    border: none;
+    background: transparent;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  /* Bottom Border Inputs */
+  .service-request-form-014-input.srf-bottom-border-input {
+    width: 100%;
+    height: 28px; /* INCREASED: Taller input field */
+    margin: 0;
+    border-bottom: 1.5px solid black !important;
+    padding: 4px 0; /* INCREASED: More padding */
+    font-size: 16px;
+    margin-top: 2px; /* ADDED: Space above input */
+  }
+  
+  /* Textarea */
+  .service-request-form-014-textarea.srf-textarea {
+    width: 100%;
+    margin: 0;
+    padding: 10px; /* INCREASED: More padding */
+    resize: vertical;
+    border: 1.5px solid black !important;
+    line-height: 1.4; /* INCREASED: Better line spacing */
+    font-size: 16px;
+    min-height: 100px; /* INCREASED: Taller textarea */
+    margin-top: 5px; /* ADDED: Space above textarea */
+  }
+  
+  /* ========================================================================= */
+  /* 6. ERROR AND SUCCESS MESSAGES                                            */
+  /* ========================================================================= */
+  
+  .service-request-form-014-error.srf-error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 15px; /* INCREASED: More padding */
+    margin: 20px 0; /* INCREASED: More margin */
+    border-radius: 6px; /* INCREASED: More rounded corners */
+    border-left: 5px solid #c62828; /* INCREASED: Thicker border */
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px; /* ADDED: Space between text and button */
+  }
+  
+  .service-request-form-014-success.srf-success-message {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 15px; /* INCREASED: More padding */
+    margin: 20px 0; /* INCREASED: More margin */
+    border-radius: 6px; /* INCREASED: More rounded corners */
+    border-left: 5px solid #2e7d32; /* INCREASED: Thicker border */
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .service-request-form-014-close-error.srf-close-error {
+    background: none;
+    border: none;
+    color: #c62828;
+    font-size: 22px; /* INCREASED: Larger close button */
+    cursor: pointer;
+    padding: 0;
+    width: 24px; /* INCREASED: Larger button area */
+    height: 24px; /* INCREASED: Larger button area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* ADDED: Prevent button from shrinking */
+  }
+  
+  .service-request-form-014-close-error.srf-close-error:hover {
+    color: #9a0007;
+    background-color: rgba(198, 40, 40, 0.1); /* ADDED: Hover background */
+    border-radius: 50%;
+  }
+  
+  /* ========================================================================= */
+  /* 7. ACTION BUTTONS (FormFooter component)                                 */
+  /* ========================================================================= */
+  
+  /* Note: FormFooter component has its own styles, but we can add container styling */
+  .service-request-form-014 .form-footer-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px; /* INCREASED: More space between buttons */
+    margin: 40px 0 20px 0; /* INCREASED: More margin */
+    padding: 25px 0; /* INCREASED: More padding */
+    border-top: 2px solid #ddd; /* INCREASED: Thicker border */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .service-request-form-014 .btn-cancel, 
+  .service-request-form-014 .btn-submit {
+    padding: 12px 30px; /* INCREASED: Larger buttons */
+    font-size: 15px; /* INCREASED: Slightly larger font */
+    border: none;
+    border-radius: 6px; /* INCREASED: More rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 140px; /* INCREASED: Wider buttons */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; /* ADDED: Bold text */
+  }
+  
+  .service-request-form-014 .btn-cancel {
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .service-request-form-014 .btn-cancel:hover:not(:disabled) {
+    background-color: #e0e0e0;
+    transform: translateY(-2px); /* ADDED: Hover effect */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* ADDED: Hover shadow */
+  }
+  
+  .service-request-form-014 .btn-submit {
+    background-color: #0066cc;
+    color: white;
+  }
+  
+  .service-request-form-014 .btn-submit:hover:not(:disabled) {
+    background-color: #0052a3;
+    transform: translateY(-2px); /* ADDED: Hover effect */
+    box-shadow: 0 3px 8px rgba(0, 102, 204, 0.3); /* ADDED: Hover shadow */
+  }
+  
+  .service-request-form-014 .btn-cancel:disabled, 
+  .service-request-form-014 .btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none; /* ADDED: Disable hover transform */
+    box-shadow: none; /* ADDED: Disable hover shadow */
+  }
+  
+  /* ========================================================================= */
+  /* 8. RESPONSIVE STYLES                                                     */
+  /* ========================================================================= */
+  
+  @media (max-width: 1250px) {
+    .service-request-form-014.srf-document-container {
+      padding: 0 20px;
+      gap: 25px; /* ADJUSTED: Slightly smaller gap on medium screens */
+    }
+    
+    .service-request-form-014-body.srf-form-body-container {
+      padding-top: 15px; /* ADJUSTED: Less padding on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-request-form-014.srf-document-container {
+      padding: 0 15px;
+      gap: 20px; /* ADJUSTED: Smaller gap on mobile */
+      margin-top: 20px; /* ADJUSTED: Less top margin on mobile */
+    }
+    
+    .service-request-form-014-body.srf-form-body-container {
+      padding-top: 10px; /* ADJUSTED: Less padding on mobile */
+      border-top-width: 1px; /* ADJUSTED: Thinner border on mobile */
+    }
+    
+    .service-request-form-014-field-row.srf-field-row {
+      flex-direction: column;
+      gap: 20px; /* ADJUSTED: Consistent vertical gap */
+    }
+    
+    .service-request-form-014-field.srf-field {
+      width: 100%;
+    }
+    
+    .service-request-form-014-form-row-group.srf-form-row-group p {
+      flex-wrap: wrap;
+      white-space: normal;
+      font-size: 14px;
+    }
+    
+    .service-request-form-014-label {
+      font-size: 14px;
+    }
+    
+    .service-request-form-014-input.srf-bottom-border-input {
+      font-size: 14px;
+      height: 26px; /* ADJUSTED: Slightly smaller but still comfortable */
+      padding: 3px 0;
+    }
+    
+    .service-request-form-014-textarea.srf-textarea {
+      font-size: 14px;
+      min-height: 90px; /* ADJUSTED: Slightly smaller but still usable */
+      padding: 8px;
+    }
+    
+    .service-request-form-014 .form-footer-container {
+      flex-direction: column;
+      gap: 15px; /* ADJUSTED: Comfortable gap on mobile */
+      margin: 30px 0 15px 0; /* ADJUSTED: Adjusted margins */
+      padding: 20px 0; /* ADJUSTED: Adjusted padding */
+    }
+    
+    .service-request-form-014 .btn-cancel, 
+    .service-request-form-014 .btn-submit {
+      width: 100%;
+      min-width: auto;
+      padding: 10px 20px; /* ADJUSTED: Slightly smaller on mobile */
+    }
+    
+    .service-request-form-014-error.srf-error-message,
+    .service-request-form-014-success.srf-success-message {
+      margin: 15px 0; /* ADJUSTED: Less margin on mobile */
+      padding: 12px; /* ADJUSTED: Less padding on mobile */
+    }
+  }
+  
+  /* Small mobile devices */
+  @media (max-width: 480px) {
+    .service-request-form-014.srf-document-container {
+      gap: 15px; /* ADJUSTED: Even smaller gap on very small screens */
+    }
+    
+    .service-request-form-014-part-header.srf-part-header {
+      font-size: 14px;
+      padding: 6px 8px;
+    }
+    
+    .service-request-form-014-form-row-group.srf-form-row-group {
+      padding: 10px 8px; /* ADJUSTED: Less padding */
+      margin-bottom: 6px; /* ADJUSTED: Less margin */
+    }
+    
+    .service-request-form-014-input.srf-bottom-border-input {
+      height: 24px; /* ADJUSTED: Comfortable height */
+      font-size: 13px;
+      padding: 2px 0;
+    }
+    
+    .service-request-form-014-textarea.srf-textarea {
+      min-height: 80px; /* ADJUSTED: Comfortable height */
+      font-size: 13px;
+      padding: 6px;
+    }
+    
+    .service-request-form-014 .form-footer-container {
+      margin: 25px 0 10px 0; /* ADJUSTED: Adjusted margins */
+      padding: 15px 0; /* ADJUSTED: Adjusted padding */
+    }
+  }
+  
+  /* ========================================================================= */
+  /* 9. FORM VALIDATION STYLES                                                */
+  /* ========================================================================= */
+  
+  /* Required field indicator */
+  .service-request-form-014-label.required::after {
+    content: " *";
+    color: #c62828;
+  }
+  
+  /* Invalid input styling */
+  .service-request-form-014-input.srf-bottom-border-input:invalid,
+  .service-request-form-014-textarea.srf-textarea:invalid {
+    border-bottom-color: #ff6b6b !important;
+  }
+  
+  /* Focus states */
+  .service-request-form-014-input.srf-bottom-border-input:focus,
+  .service-request-form-014-textarea.srf-textarea:focus {
+    border-bottom-color: #0066cc !important;
+    background-color: rgba(0, 102, 204, 0.05);
+    padding-left: 5px; /* ADDED: Visual feedback on focus */
+    transition: all 0.2s ease;
+  }
+  
+  /* Disabled state */
+  .service-request-form-014-input.srf-bottom-border-input:disabled,
+  .service-request-form-014-textarea.srf-textarea:disabled {
+    background-color: #f5f5f5;
+    color: #757575;
+    cursor: not-allowed;
+    border-bottom-style: dashed !important; /* ADDED: Visual indicator for disabled */
+  }
+  
+  /* ========================================================================= */
+  /* 10. LOADING STATE                                                        */
+  /* ========================================================================= */
+  
+  .service-request-form-014.loading .service-request-form-014-input.srf-bottom-border-input,
+  .service-request-form-014.loading .service-request-form-014-textarea.srf-textarea {
+    pointer-events: none;
+    opacity: 0.7;
+    background-color: #f9f9f9; /* ADDED: Visual feedback for loading */
+  }
+  
+  /* Loading spinner for submit button */
+  @keyframes service-request-form-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .service-request-form-014 .btn-submit.loading::after {
+    content: "";
+    display: inline-block;
+    width: 14px; /* INCREASED: Larger spinner */
+    height: 14px; /* INCREASED: Larger spinner */
+    margin-left: 10px; /* INCREASED: More margin */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: service-request-form-spin 1s linear infinite;
+  }
+  
+  /* ========================================================================= */
+  /* 11. PRINT STYLES                                                         */
+  /* ========================================================================= */
+  
+  @media print {
+    .service-request-form-014.srf-document-container {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      margin-top: 0;
+      gap: 10px; /* ADJUSTED: Minimal gap for print */
+    }
+    
+    .service-request-form-014-body.srf-form-body-container {
+      border-top: none; /* REMOVED: No border in print */
+      padding-top: 0; /* REMOVED: No extra padding in print */
+    }
+    
+    .service-request-form-014 .btn-cancel,
+    .service-request-form-014 .btn-submit,
+    .service-request-form-014-error.srf-error-message,
+    .service-request-form-014-success.srf-success-message,
+    .service-request-form-014-close-error.srf-close-error {
+      display: none !important;
+    }
+    
+    .service-request-form-014-input.srf-bottom-border-input,
+    .service-request-form-014-textarea.srf-textarea {
+      border-bottom-color: black !important;
+      background: transparent !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    
+    .service-request-form-014-part-header.srf-part-header {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      background-color: #e0e0e0 !important;
+    }
+    
+    /* Ensure proper spacing in print */
+    .service-request-form-014-form-row-group.srf-form-row-group {
+      margin-bottom: 15px; /* ADDED: Ensure spacing in print */
+      page-break-inside: avoid; /* ADDED: Prevent breaking within form groups */
+    }
+  }
+  
+  /* ========================================================================= */
+  /* 12. ACCESSIBILITY IMPROVEMENTS                                           */
+  /* ========================================================================= */
+  
+  /* Focus visible for keyboard navigation */
+  .service-request-form-014-input.srf-bottom-border-input:focus-visible,
+  .service-request-form-014-textarea.srf-textarea:focus-visible,
+  .service-request-form-014 .btn-cancel:focus-visible,
+  .service-request-form-014 .btn-submit:focus-visible {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+  }
+  
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .service-request-form-014-input.srf-bottom-border-input,
+    .service-request-form-014-textarea.srf-textarea {
+      border-width: 2px !important;
+    }
+    
+    .service-request-form-014-part-header.srf-part-header {
+      background-color: #000 !important;
+      color: #fff !important;
+    }
+  }
+  
+  /* Reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .service-request-form-014 .btn-cancel,
+    .service-request-form-014 .btn-submit,
+    .service-request-form-014-input.srf-bottom-border-input,
+    .service-request-form-014-textarea.srf-textarea {
+      transition: none;
+    }
+    
+    @keyframes service-request-form-spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  }
+
+  /* ========================================================================= */
+/* DATE AND TIME INPUT STYLES                                               */
+/* ========================================================================= */
+
+.service-request-form-014-date-time-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  
+  .service-request-form-014-date-time-inputs {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .service-request-form-014-date-input.srf-bottom-border-input,
+  .service-request-form-014-time-input.srf-bottom-border-input {
+    width: 100%;
+    height: 28px;
+    border-bottom: 1.5px solid black !important;
+    padding: 4px 0;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    background: transparent;
+    color: inherit;
+  }
+  
+  /* Custom calendar icon for date input */
+  .service-request-form-014-date-input.srf-bottom-border-input::-webkit-calendar-picker-indicator {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>');
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.7;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .service-request-form-014-date-input.srf-bottom-border-input::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+  }
+  
+  /* Custom clock icon for time input */
+  .service-request-form-014-time-input.srf-bottom-border-input::-webkit-calendar-picker-indicator {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>');
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.7;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .service-request-form-014-time-input.srf-bottom-border-input::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+  }
+  
+  /* Firefox date/time input styling */
+  .service-request-form-014-date-input.srf-bottom-border-input::-moz-focus-inner,
+  .service-request-form-014-time-input.srf-bottom-border-input::-moz-focus-inner {
+    border: 0;
+  }
+  
+  .service-request-form-014-date-input.srf-bottom-border-input::-moz-calendar-picker-indicator,
+  .service-request-form-014-time-input.srf-bottom-border-input::-moz-calendar-picker-indicator {
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  /* "Now" button styling */
+  .service-request-form-014-current-datetime-btn {
+    padding: 4px 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    height: 28px;
+    flex-shrink: 0;
+  }
+  
+  .service-request-form-014-current-datetime-btn:hover:not(:disabled) {
+    background-color: #e0e0e0;
+    border-color: #999;
+  }
+  
+  .service-request-form-014-current-datetime-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .service-request-form-014-current-datetime-btn:active:not(:disabled) {
+    background-color: #d0d0d0;
+    transform: translateY(1px);
+  }
+  
+  /* Date format note */
+  .service-request-form-014-date-format-note {
+    font-size: 11px;
+    color: #666;
+    font-style: italic;
+    margin-top: 2px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Date/Time input focus states */
+  .service-request-form-014-date-input.srf-bottom-border-input:focus,
+  .service-request-form-014-time-input.srf-bottom-border-input:focus {
+    border-bottom-color: #0066cc !important;
+    background-color: rgba(0, 102, 204, 0.05);
+  }
+  
+  /* Date/Time input disabled state */
+  .service-request-form-014-date-input.srf-bottom-border-input:disabled,
+  .service-request-form-014-time-input.srf-bottom-border-input:disabled {
+    background-color: #f5f5f5;
+    color: #757575;
+    cursor: not-allowed;
+    border-bottom-style: dashed !important;
+  }
+  
+  /* ========================================================================= */
+  /* RESPONSIVE ADJUSTMENTS FOR DATE/TIME INPUTS                              */
+  /* ========================================================================= */
+  
+  @media (max-width: 768px) {
+    .service-request-form-014-date-time-inputs {
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .service-request-form-014-date-input.srf-bottom-border-input,
+    .service-request-form-014-time-input.srf-bottom-border-input {
+      height: 26px;
+      font-size: 13px;
+    }
+    
+    .service-request-form-014-current-datetime-btn {
+      width: 100%;
+      height: 26px;
+      margin-top: 2px;
+    }
+    
+    .service-request-form-014-date-format-note {
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .service-request-form-014-date-input.srf-bottom-border-input,
+    .service-request-form-014-time-input.srf-bottom-border-input {
+      height: 24px;
+      font-size: 12px;
+    }
+    
+    .service-request-form-014-current-datetime-btn {
+      height: 24px;
+      font-size: 11px;
+    }
+  }
+  
+  /* ========================================================================= */
+  /* PRINT STYLES FOR DATE/TIME INPUTS                                        */
+  /* ========================================================================= */
+  
+  @media print {
+    .service-request-form-014-date-input.srf-bottom-border-input,
+    .service-request-form-014-time-input.srf-bottom-border-input {
+      border-bottom-color: black !important;
+      background: transparent !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    
+    .service-request-form-014-current-datetime-btn {
+      display: none !important;
+    }
+    
+    .service-request-form-014-date-format-note {
+      color: black !important;
+      font-weight: normal;
+    }
+  }
+  
+  /* ========================================================================= */
+  /* ACCESSIBILITY FOR DATE/TIME INPUTS                                       */
+  /* ========================================================================= */
+  
+  .service-request-form-014-date-input.srf-bottom-border-input:focus-visible,
+  .service-request-form-014-time-input.srf-bottom-border-input:focus-visible {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+  }
+  
+  /* High contrast mode */
+  @media (prefers-contrast: high) {
+    .service-request-form-014-date-input.srf-bottom-border-input::-webkit-calendar-picker-indicator,
+    .service-request-form-014-time-input.srf-bottom-border-input::-webkit-calendar-picker-indicator {
+      filter: invert(1);
+    }
+  }

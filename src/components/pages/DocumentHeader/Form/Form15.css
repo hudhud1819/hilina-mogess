@@ -1,0 +1,142 @@
+.f15-document-container {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.f15-watermark {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 110pt;
+    color: rgba(220, 220, 220, 0.15);
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 0;
+    white-space: nowrap;
+}
+
+.f15-master-layout {
+    width: 1400px; /* Wide enough for the 9-column table */
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.f15-document-body {
+    width: 100%;
+    flex: 1;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.f15-top-grid {
+    display: flex;
+    border: 1px solid black;
+    margin-bottom: -1px; /* Borders overlap with table */
+}
+
+.f15-input-group {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.function-box { flex: 3; border-right: 1px solid black; }
+.date-box { flex: 1; }
+
+.f15-bold-label {
+    font-weight: bold;
+    font-size: 15pt;
+    margin-right: 15px;
+    white-space: nowrap;
+}
+
+.f15-line-input {
+    flex: 1;
+    border: none;
+    font-size: 15pt;
+    outline: none;
+    background: transparent;
+    font-family: 'Times New Roman', serif;
+}
+
+.f15-action-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.f15-action-table th, .f15-action-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.f15-action-table th {
+    font-weight: bold;
+    font-size: 12pt;
+    background-color: #fcfcfc;
+}
+
+.f15-sub-th {
+    font-size: 11pt;
+    height: 30px;
+}
+
+.f15-action-table td textarea {
+    width: 100%;
+    min-height: 100px;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 13pt;
+    text-align: left;
+}
+
+.f15-action-table td input[type="text"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 13pt;
+}
+
+.f15-checkbox-cell {
+    width: 60px;
+}
+
+.f15-checkbox-cell input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.f15-note-section {
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 14pt;
+}
+
+.f15-footer-warning {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+.f15-amharic { font-size: 15pt; margin: 0; }
+.f15-english { font-size: 13pt; font-weight: bold; margin: 5px 0 20px 0; }
+
+@media print {
+    .f15-document-container { padding: 0; }
+    .f15-watermark { display: block; }
+}

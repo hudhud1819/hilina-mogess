@@ -1,0 +1,130 @@
+.f20-document-container {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f20-master-layout {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    min-height: auto; /* Ensures the container doesn't stretch unnecessarily */
+}
+
+/* Updated Body: Removed min-height and added flex: 1 */
+.f20-document-body {
+    width: 100%;
+    flex: 1; /* Occupies available space but doesn't force a huge gap */
+    margin-top: 30px;
+    margin-bottom: 0; /* Ensures no extra space before footer */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.f20-grey-header-strip {
+    width: 100%;
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 14pt;
+    padding: 10px 20px;
+    margin: 0;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.f20-padded-content {
+    padding: 10px 60px; /* Reduced vertical padding */
+    box-sizing: border-box;
+}
+
+.f20-main-list, .f20-sub-list {
+    font-size: 15pt;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.f20-row {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px; /* Reduced margin slightly to pull footer up */
+    width: 100%;
+}
+
+.f20-label {
+    font-weight: bold;
+    font-size: 12pt;
+    white-space: nowrap;
+}
+
+.f20-underline-field {
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 0 10px;
+    font-family: 'Times New Roman', serif;
+    font-size: 13pt;
+    outline: none;
+    background: transparent;
+    resize: none;
+}
+
+.f20-indent-row {
+    padding-left: 60px;
+}
+
+.f20-align-start {
+    align-items: flex-start !important;
+}
+
+.f20-two-line {
+    min-height: 2.8em; 
+    line-height: 1.4;
+    background-image: linear-gradient(transparent, transparent 1.35em, black 1.35em, black 1.40em);
+    background-size: 100% 1.4em;
+}
+
+.f20-large-input {
+    flex: 1;
+    border: none;
+    border-bottom: 1.5px solid black;
+    margin: 0 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+}
+
+.f20-instruction-content {
+    padding: 20px 60px;
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.f20-bold-label {
+    font-weight: bold;
+    font-size: 14pt;
+    font-family: Arial, sans-serif;
+    white-space: nowrap;
+    padding-top: 5px;
+}
+
+.f20-indent-example {
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+.f20-padded-example p {
+    margin-bottom: 8px; /* Tighter margins for example text */
+    line-height: 1.4;
+    font-size: 15pt;
+}
+
+@media print {
+    .f20-document-container { padding: 0; }
+    .f20-document-body { margin-top: 20px; }
+}

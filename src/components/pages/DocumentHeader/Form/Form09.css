@@ -1,0 +1,845 @@
+/* ========================================================================= */
+/* FORM 09 - RISK ASSESSMENT FORM SPECIFIC STYLES                            */
+/* ========================================================================= */
+
+/* ========================================================================= */
+/* 1. MAIN CONTAINER                                                        */
+/* ========================================================================= */
+.form09-document-container {
+  width: 1200px; /* CHANGE FROM max-width TO width */
+  margin: 0 auto; /* Centers it if needed */
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 40px;
+  background-color: white; 
+}
+
+/* ========================================================================= */
+/* 2. FORM BODY CONTAINER                                                   */
+/* ========================================================================= */
+.form09-form-body-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* ========================================================================= */
+/* 3. PAGE NAVIGATION                                                       */
+/* ========================================================================= */
+.form09-page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin: 20px 0;
+  border-bottom: 2px solid #ddd;
+  width: 100%;
+}
+
+.form09-nav-button {
+  padding: 10px 25px;
+  background-color: #1a4a7c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  min-width: 150px;
+  text-align: center;
+}
+
+.form09-nav-button:hover:not(:disabled) {
+  background-color: #0052a3;
+}
+
+.form09-nav-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ========================================================================= */
+/* 4. PART SECTIONS                                                         */
+/* ========================================================================= */
+.form09-part-section {
+  border: 2px solid #333;
+  margin-bottom: 25px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* ========================================================================= */
+/* 5. FORM ELEMENTS                                                         */
+/* ========================================================================= */
+.form09-form-row-group {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form09-form-row-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* ========================================================================= */
+/* 6. STEP SECTIONS                                                         */
+/* ========================================================================= */
+.form09-step-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-left: 4px solid #0066cc;
+  border-radius: 4px;
+}
+
+.form09-step-section h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form09-step-section p {
+  margin: 10px 0;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ========================================================================= */
+/* 7. TABLES                                                                */
+/* ========================================================================= */
+.form09-category-table,
+.form09-risk-summary-table,
+.form09-implementation-plan-table,
+.form09-rating-table,
+.form09-matrix-table,
+.form09-priority-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.form09-category-table th,
+.form09-risk-summary-table th,
+.form09-implementation-plan-table th,
+.form09-rating-table th,
+.form09-matrix-table th,
+.form09-priority-table th {
+  background-color: #f0f0f0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-weight: bold;
+  color: #000;
+}
+
+.form09-category-table td,
+.form09-risk-summary-table td,
+.form09-implementation-plan-table td,
+.form09-rating-table td,
+.form09-matrix-table td,
+.form09-priority-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  vertical-align: top;
+  background-color: white;
+}
+
+/* Alternating row colors for better readability */
+.form09-risk-summary-table tbody tr:nth-child(even),
+.form09-implementation-plan-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Inputs in tables */
+.form09-table-input,
+.form09-table-select {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+.form09-table-input:focus,
+.form09-table-select:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.form09-table-select {
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Checkbox cells */
+.form09-checkbox-cell {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.form09-table-checkbox {
+  margin: 0 auto;
+  display: block;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+/* ========================================================================= */
+/* 8. HEADER STRUCTURE - PAGE 1 SPECIFIC                                    */
+/* ========================================================================= */
+.form09-header-container {
+  margin: 30px 0;
+  border: 2px solid #333;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Each row in the header */
+.form09-header-row {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  min-height: 60px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.form09-header-row:last-child {
+  border-bottom: none;
+}
+
+/* Full width row */
+.form09-full-width {
+  width: 100%;
+}
+
+/* Three columns row */
+.form09-three-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 15px 20px;
+}
+
+/* Each column in the three-column layout */
+.form09-header-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+.form09-header-label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 8px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Value container */
+.form09-header-value {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* Input field styling */
+.form09-header-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+.form09-header-input:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.form09-header-input[type="date"] {
+  padding: 7px 12px;
+  height: 40px;
+}
+
+/* Display value */
+.form09-display-value {
+  display: inline-block;
+  min-height: 24px;
+  padding: 8px 0;
+  width: 100%;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* For the first row */
+.form09-full-width .form09-header-label {
+  width: 200px;
+  min-width: 200px;
+}
+
+.form09-full-width .form09-header-value {
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* ========================================================================= */
+/* 9. TEXTAREAS                                                            */
+/* ========================================================================= */
+.form09-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  resize: vertical;
+  margin: 10px 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.form09-textarea:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+/* ========================================================================= */
+/* 10. RISK LISTS                                                           */
+/* ========================================================================= */
+.form09-risk-list,
+.form09-regulation-list {
+  list-style-position: inside;
+  margin: 20px;
+  padding-left: 0;
+}
+
+.form09-risk-list li,
+.form09-regulation-item {
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: flex-start;
+}
+
+.form09-risk-list strong,
+.form09-regulation-item strong {
+  min-width: 30px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.form09-risk-input,
+.form09-regulation-input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+.form09-risk-input:focus,
+.form09-regulation-input:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+/* ========================================================================= */
+/* 11. REGULATION TEXTAREA SPECIFIC STYLING                                 */
+/* ========================================================================= */
+.form09-regulation-textarea {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 60px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.form09-regulation-textarea:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+/* ========================================================================= */
+/* 12. CONTROLS HIERARCHY                                                   */
+/* ========================================================================= */
+.form09-controls-hierarchy {
+  margin: 20px;
+  padding-left: 20px;
+}
+
+.form09-control-item {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.form09-control-checkbox {
+  margin-right: 15px;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.form09-control-item strong {
+  color: #000;
+  margin-right: 8px;
+}
+
+/* ========================================================================= */
+/* 13. SIGNATURE BLOCKS                                                     */
+/* ========================================================================= */
+.form09-team-endorsements {
+  margin: 20px;
+}
+
+.form09-signature-block {
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.form09-dynamic-signature {
+  padding-right: 40px;
+}
+
+.form09-signature-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.form09-signature-row label {
+  min-width: 100px;
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.form09-signature-input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+.form09-signature-input:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.form09-signature-input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* ========================================================================= */
+/* 14. DYNAMIC ROWS STYLES                                                  */
+/* ========================================================================= */
+.form09-dynamic-list-section {
+  margin: 20px;
+}
+
+.form09-dynamic-row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.form09-row-number {
+  min-width: 30px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+}
+
+/* Dynamic table section */
+.form09-dynamic-table-section {
+  margin: 20px 0;
+}
+
+.form09-action-cell {
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.form09-control-method-section {
+  margin: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  border-left: 4px solid #0066cc;
+}
+
+/* ========================================================================= */
+/* 15. BUTTON STYLES                                                        */
+/* ========================================================================= */
+/* + SIGN ADD BUTTON */
+.form09-add-plus-btn {
+  padding: 8px 12px;
+  background-color: #1a4a7c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.form09-add-plus-btn:hover:not(:disabled) {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.form09-add-plus-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form09-remove-row-btn,
+.form09-remove-signature-btn {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.form09-remove-row-btn:hover:not(:disabled),
+.form09-remove-signature-btn:hover:not(:disabled) {
+  background-color: #d32f2f;
+}
+
+.form09-remove-row-btn:disabled,
+.form09-remove-signature-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.form09-remove-signature-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* ========================================================================= */
+/* 16. ERROR AND SUCCESS MESSAGES                                           */
+/* ========================================================================= */
+.form09-error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 4px;
+  border-left: 4px solid #c62828;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form09-success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 4px;
+  border-left: 4px solid #2e7d32;
+  font-size: 14px;
+}
+
+.form09-close-error {
+  background: none;
+  border: none;
+  color: #c62828;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.form09-close-error:hover {
+  color: #b71c1c;
+}
+
+/* ========================================================================= */
+/* 17. SPECIAL TABLE STYLES                                                 */
+/* ========================================================================= */
+.form09-rating-table {
+  border: 1px solid #ccc;
+}
+
+.form09-rating-table th {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.form09-rating-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.form09-matrix-table {
+  border: 1px solid #ccc;
+}
+
+.form09-matrix-table th {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.form09-matrix-table td {
+  font-weight: 600;
+  text-align: center;
+}
+
+.form09-priority-table {
+  border: 1px solid #ccc;
+}
+
+.form09-priority-table th {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.form09-priority-table td:first-child {
+  font-weight: 700;
+  color: #000;
+}
+
+/* ========================================================================= */
+/* 18. RESPONSIVE STYLES                                                    */
+/* ========================================================================= */
+@media (max-width: 1250px) {
+  .form09-document-container {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .form09-form-body-container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .form09-document-container {
+    padding: 10px;
+  }
+  
+  .form09-form-body-container {
+    margin: 10px auto;
+  }
+  
+  .form09-page-navigation {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  
+  .form09-nav-button {
+    width: 100%;
+    margin: 5px 0;
+    min-width: auto;
+  }
+  
+  /* Header responsive */
+  .form09-full-width {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+  
+  .form09-full-width .form09-header-label {
+    width: 100%;
+    min-width: auto;
+    margin-bottom: 10px;
+  }
+  
+  .form09-full-width .form09-header-value {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .form09-three-columns {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .form09-header-column {
+    width: 100%;
+  }
+  
+  .form09-step-section,
+  .form09-form-row-group {
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .form09-signature-block {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  .form09-signature-row {
+    width: 100%;
+    min-width: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .form09-signature-row label {
+    display: block;
+    margin-bottom: 5px;
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .form09-signature-row input {
+    width: 100%;
+  }
+  
+  .form09-dynamic-signature {
+    padding-right: 10px;
+  }
+  
+  .form09-remove-signature-btn {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+  
+  .form09-dynamic-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .form09-row-number {
+    margin-bottom: 5px;
+  }
+  
+  .form09-risk-input,
+  .form09-regulation-textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+  
+  .form09-remove-row-btn {
+    align-self: flex-end;
+    margin-left: 0;
+  }
+  
+  .form09-action-cell {
+    text-align: right;
+  }
+  
+  /* Table responsive */
+  .form09-risk-summary-table,
+  .form09-implementation-plan-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  /* + button responsive */
+  .form09-add-plus-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form09-header-row {
+    padding: 0 15px;
+  }
+  
+  .form09-header-input,
+  .form09-textarea,
+  .form09-table-input,
+  .form09-signature-input,
+  .form09-regulation-textarea {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+  
+  .form09-step-section h2 {
+    font-size: 16px;
+  }
+  
+  .form09-nav-button {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+  
+  .form09-add-plus-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px 8px;
+  }
+}

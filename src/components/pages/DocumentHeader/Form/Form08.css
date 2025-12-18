@@ -1,0 +1,374 @@
+/* File Closing Form Styles */
+.file-closing-form-container {
+  width: 1200px; /* Changed to match document header width */
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 40px;
+}
+
+/* Verification Notice */
+.file-closing-form-container .verification-notice {
+  text-align: center;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #fff8e1;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .multilingual-notice {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #856404;
+}
+
+/* Bilingual Headers and Labels */
+.file-closing-form-container .bilingual-header {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #2c3e50;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .bilingual-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #34495e;
+  line-height: 1.4;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .bilingual-label span {
+  display: block;
+  margin-bottom: 3px;
+}
+
+/* File Section */
+.file-closing-form-container .file-closing-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .file-closing-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .file-closing-row .field-label {
+  min-width: 200px;
+  margin-right: 20px;
+}
+
+.file-closing-form-container .file-number-input {
+  flex: 1;
+  max-width: 300px;
+}
+
+/* Warning Box */
+.file-closing-form-container .warning-box {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f8d7da;
+  border: 2px solid #dc3545;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .warning-text {
+  margin: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .warning-text.amharic {
+  font-size: 16px;
+  color: #721c24;
+  margin-bottom: 10px;
+}
+
+.file-closing-form-container .warning-text.english {
+  font-size: 14px;
+  color: #721c24;
+}
+
+/* Form Sections */
+.file-closing-form-container .form-section {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .closing-reason-section,
+.file-closing-form-container .successive-file-section,
+.file-closing-form-container .closure-notes-section {
+  background-color: white;
+}
+
+.file-closing-form-container .text-area-container {
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .reason-textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .additional-reasons {
+  margin-top: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .notes-textarea {
+  width: 100%;
+  min-height: 80px;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+/* Two Column Layout */
+.file-closing-form-container .closing-authorization-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .form-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .form-column .field-label {
+  margin-bottom: 8px;
+}
+
+.file-closing-form-container .input-container {
+  margin-top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .successive-file-input {
+  max-width: 250px;
+}
+
+/* Signature Section */
+.file-closing-form-container .file-closing-signatures {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px dashed #dee2e6;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .signature-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .signature-column .field-label {
+  margin-bottom: 8px;
+}
+
+.file-closing-form-container .signature-input-container {
+  margin-top: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .signature-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .signature-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.file-closing-form-container .signature-input:disabled {
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+}
+
+/* Form Inputs */
+.file-closing-form-container .field-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: white;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .field-input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.file-closing-form-container .field-input:disabled {
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+}
+
+/* Error and Success Messages */
+.file-closing-form-container .form-error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-closing-form-container .form-success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #c3e6cb;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 1250px) {
+  .file-closing-form-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .file-closing-form-container {
+    padding: 15px;
+  }
+
+  .file-closing-form-container .closing-authorization-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .file-closing-form-container .file-closing-signatures {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .file-closing-form-container .file-closing-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .file-closing-form-container .file-closing-row .field-label {
+    min-width: auto;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .file-closing-form-container .file-number-input {
+    max-width: 100%;
+  }
+
+  .file-closing-form-container .successive-file-input {
+    max-width: 100%;
+  }
+
+  .file-closing-form-container .warning-text.amharic {
+    font-size: 14px;
+  }
+
+  .file-closing-form-container .warning-text.english {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .file-closing-form-container .verification-notice {
+    padding: 10px;
+  }
+
+  .file-closing-form-container .multilingual-notice {
+    font-size: 12px;
+  }
+
+  .file-closing-form-container .bilingual-label {
+    font-size: 13px;
+  }
+
+  .file-closing-form-container .field-input {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .file-closing-form-container .reason-textarea {
+    min-height: 80px;
+  }
+
+  .file-closing-form-container .notes-textarea {
+    min-height: 60px;
+  }
+}

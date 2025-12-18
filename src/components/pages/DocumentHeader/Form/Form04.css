@@ -1,0 +1,117 @@
+.f4-document-container {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.f4-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 130pt;
+    color: rgba(220, 220, 220, 0.2);
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.f4-master-layout {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.f4-document-body {
+    width: 100%;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.f4-schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensures column widths remain consistent */
+}
+
+.f4-schedule-table th, .f4-schedule-table td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px;
+    font-size: 14pt;
+}
+
+.f4-header-amharic th {
+    font-size: 15pt;
+    padding-bottom: 0;
+}
+
+.f4-header-english th {
+    font-size: 13pt;
+    padding-top: 0;
+}
+
+.f4-time-cell {
+    width: 250px;
+    font-weight: normal;
+}
+
+.f4-day-box {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 12pt;
+    margin: 5px 0;
+}
+
+.f4-day-input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 150px;
+    text-align: center;
+    font-size: 14pt;
+    outline: none;
+}
+
+.f4-table-input {
+    width: 100%;
+    min-height: 60px;
+    border: none;
+    resize: none;
+    outline: none;
+    font-family: 'Comic Sans MS', cursive; /* To match handwritten style in 44.jpg */
+    font-size: 14pt;
+    text-align: center;
+}
+
+.f4-static-row td {
+    background-color: transparent;
+}
+
+.f4-label-cell {
+    text-align: center;
+}
+
+.f4-bold-text {
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+.f4-amharic-small {
+    font-size: 14pt;
+}
+
+.f4-footer-warning {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 2px solid #333;
+    padding-top: 10px;
+}
+
+.f4-amharic-warn { font-size: 15pt; margin: 0; }
+.f4-english-warn { font-size: 13pt; font-weight: bold; margin: 5px 0 30px 0; }

@@ -1,0 +1,133 @@
+/* --- PAGE SETUP --- */
+.f07-full-page-container {
+    background-color: white;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.f07-form-paper {
+    background-color: white;
+    width: 1200px;
+    min-height: 297mm;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* --- THE GAP --- */
+.f07-document-body {
+    width: 100%;
+    margin-top: 25px; /* Minimized professional gap */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- INFO SECTION --- */
+.f07-info-section {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.f07-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.f07-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.f07-input-group label {
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.f07-input-group input, 
+.f07-input-group textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Times New Roman', serif;
+}
+
+/* --- TABLE --- */
+.f07-access-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 4px solid black !important;
+    table-layout: fixed;
+}
+
+.f07-access-table thead th {
+    border: 2px solid black;
+    padding: 10px 5px;
+    font-size: 11pt;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.f07-access-table tbody td {
+    border: 2px solid black;
+    height: 38px;
+    padding: 0 4px;
+    vertical-align: middle;
+}
+
+.f07-table-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 12px;
+}
+
+/* --- RECTANGLE GRAY CONTROLS --- */
+.f07-row-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+.f07-control-btn {
+    width: 40px;
+    height: 30px;
+    border-radius: 4px; /* Rectangle */
+    border: 1px solid #ccc;
+    background-color: #f5f5f5; /* Gray */
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f07-control-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.f07-control-label {
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+/* --- PRINT --- */
+@media print {
+    .f07-no-print { display: none !important; }
+    .f07-full-page-container { padding: 0; background-color: white; }
+    .f07-access-table { border: 4px solid black !important; }
+}

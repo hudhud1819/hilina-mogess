@@ -1,0 +1,71 @@
+/* Main Wrapper */
+.insa-unique-footer-wrapper {
+width: 100%;
+    background: transparent !important; /* Forces removal of any inherited yellow */
+}
+
+/* The horizontal line matching the document image */
+.insa-footer-divider-line {
+    border-top: 1.5px solid #000 !important;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.insa-footer-warning-block {
+    text-align: center;
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important; /* Removes any box borders */
+}
+
+.insa-footer-amharic-text {
+    font-size: 11pt;
+    font-family: 'Nyala', serif;
+    color: #000 !important;
+    margin-bottom: 2px;
+}
+
+.insa-footer-english-text {
+    font-size: 10pt;
+    font-family: 'Times New Roman', serif;
+    color: #000 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* UI Buttons Styling - Hidden when printing */
+.insa-footer-button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 40px;
+    padding-top: 20px;
+  /* Light separator for UI only */
+}
+
+.insa-footer-btn-primary {
+    background-color: #1a4a7c !important; /* Matches your dark blue button */
+    color: white !important;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.insa-footer-btn-secondary {
+    background-color: white !important;
+    color: #333 !important;
+    padding: 10px 24px;
+    border: 1px solid #ccc !important;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* CRITICAL: Hides the buttons and the gray UI line on the printed document */
+@media print {
+    .insa-footer-button-container, .no-print {
+        display: none !important;
+    }
+}

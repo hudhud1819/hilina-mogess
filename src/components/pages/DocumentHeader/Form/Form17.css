@@ -1,0 +1,329 @@
+/* InternalQualityAuditPlan.css */
+
+.internal-audit-container {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.audit-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 120pt;
+    color: rgba(200, 200, 200, 0.15);
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 0;
+    white-space: nowrap;
+}
+
+.audit-master-layout {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.audit-document-body {
+    width: 100%;
+    flex: 1;
+    margin-top: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Fields Section */
+.audit-top-fields {
+    margin-bottom: 30px;
+}
+
+.audit-field-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.audit-field-row.full-width {
+    gap: 0;
+}
+
+.audit-input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.audit-input-group .audit-label {
+    font-weight: bold;
+    font-size: 14pt;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.audit-input-field {
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 8px 0;
+    font-size: 14pt;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.audit-input-field:focus {
+    border-bottom-color: #0066cc;
+    background-color: #f9f9f9;
+}
+
+.audit-textarea-field {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 14pt;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    outline: none;
+    resize: vertical;
+    min-height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.audit-textarea-field:focus {
+    border-color: #0066cc;
+    background-color: #f9f9f9;
+}
+
+/* Audit Plan Table Section */
+.audit-plan-section {
+    margin: 30px 0;
+}
+
+.audit-section-title {
+    font-size: 15pt;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+    color: #000;
+}
+
+.audit-plan-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-bottom: 15px;
+}
+
+.audit-plan-table th {
+    border: 1px solid black;
+    padding: 12px 15px;
+    font-size: 14pt;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.audit-plan-table td {
+    border: 1px solid black;
+    padding: 0;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.audit-table-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 12px 15px;
+    font-size: 14pt;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    outline: none;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.audit-table-input:focus {
+    background-color: #f9f9f9;
+}
+
+.audit-add-row-btn {
+    background: none;
+    border: 1px solid #0066cc;
+    color: #0066cc;
+    padding: 8px 16px;
+    font-size: 12pt;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.audit-add-row-btn:hover {
+    background-color: #0066cc;
+    color: white;
+}
+
+/* Signature Section */
+.audit-signature-section {
+    margin-top: 50px;
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+
+.audit-signature-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.audit-sig-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.audit-sig-box .audit-label {
+    font-weight: bold;
+    font-size: 14pt;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+/* Footer Warning */
+.audit-footer-warning {
+    text-align: center;
+    margin-top: 50px;
+    border-top: 2px solid #333;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.audit-amharic-text {
+    font-size: 14pt;
+    margin: 0;
+    font-weight: normal;
+    color: #333;
+    line-height: 1.5;
+}
+
+.audit-english-text {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    color: #333;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+/* Print Styles */
+@media print {
+    .internal-audit-container {
+        padding: 0;
+        min-height: auto;
+    }
+    
+    .audit-master-layout {
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+    
+    .audit-watermark {
+        opacity: 0.1;
+    }
+    
+    .audit-input-field,
+    .audit-table-input,
+    .audit-textarea-field {
+        background-color: white !important;
+        font-family: 'Times New Roman', serif !important;
+        border-bottom-color: black !important;
+    }
+    
+    .audit-add-row-btn {
+        display: none !important;
+    }
+    
+    .audit-plan-table {
+        page-break-inside: avoid;
+    }
+    
+    .audit-signature-section {
+        page-break-inside: avoid;
+    }
+    
+    /* Hide form footer buttons when printing */
+    .form-footer {
+        display: none !important;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1250px) {
+    .audit-master-layout {
+        width: 95%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .audit-master-layout {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .audit-field-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .audit-input-group {
+        width: 100%;
+    }
+    
+    .audit-label {
+        font-size: 12pt;
+    }
+    
+    .audit-input-field,
+    .audit-table-input,
+    .audit-textarea-field {
+        font-size: 12pt;
+    }
+    
+    .audit-signature-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .audit-watermark {
+        font-size: 80pt;
+    }
+}
+
+/* Hover Effects */
+.audit-input-field:hover,
+.audit-table-input:hover,
+.audit-textarea-field:hover {
+    background-color: #f9f9f9;
+}
+
+/* Loading State */
+.audit-loading .audit-input-field,
+.audit-loading .audit-table-input,
+.audit-loading .audit-textarea-field {
+    background-color: #f8f8f8;
+    cursor: wait;
+}

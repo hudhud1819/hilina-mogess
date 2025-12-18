@@ -1,0 +1,855 @@
+/* ========================================================================= */
+/* DISCIPLINARY FORM SPECIFIC STYLES                                        */
+/* ========================================================================= */
+
+/* Main container for disciplinary form */
+.disciplinary-form-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 40px;
+}
+
+/* ========================================================================= */
+/* PART SECTIONS                                                             */
+/* ========================================================================= */
+.disciplinary-form-container .part-section {
+  border: 2px solid #333;
+  margin: 25px 0;
+  background-color: white;
+}
+
+.disciplinary-form-container .disciplinary-part-section {
+  border: 2px solid #333;
+}
+
+.disciplinary-form-container .part-header {
+  background-color: #e0e0e0;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: #333;
+}
+
+/* ========================================================================= */
+/* PAGE CONTENT                                                              */
+/* ========================================================================= */
+.disciplinary-form-container .page-content {
+  padding: 20px;
+}
+
+.disciplinary-form-container .disciplinary-page-content {
+  padding: 20px;
+}
+
+/* ========================================================================= */
+/* FORM ELEMENTS                                                             */
+/* ========================================================================= */
+.disciplinary-form-container .form-row-group {
+  margin: 15px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.disciplinary-form-container .disciplinary-row-group {
+  margin: 15px 0;
+}
+
+.disciplinary-form-container .form-row-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.disciplinary-form-container .instruction-text {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+}
+
+.disciplinary-form-container .disciplinary-instruction-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.disciplinary-form-container .sub-text {
+  font-size: 13px;
+  font-weight: normal;
+  color: #666;
+  font-style: italic;
+}
+
+.disciplinary-form-container .disciplinary-sub-text {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Checkbox/Radio Groups */
+.disciplinary-form-container .checkbox-group {
+  margin: 10px 0;
+}
+
+.disciplinary-form-container .disciplinary-checkbox-group {
+  margin: 10px 0;
+}
+
+.disciplinary-form-container .checkbox-item {
+  margin-right: 30px;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.disciplinary-form-container .disciplinary-checkbox-item {
+  margin-right: 30px;
+}
+
+.disciplinary-form-container .checkbox-box {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+.disciplinary-form-container .disciplinary-checkbox-box {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+/* ========================================================================= */
+/* TABLES                                                                   */
+/* ========================================================================= */
+.disciplinary-form-container .form-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.disciplinary-form-container .disciplinary-signature-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+.disciplinary-form-container .disciplinary-numbered-fields-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+.disciplinary-form-container .field-label {
+  font-weight: bold;
+  padding-right: 10px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.disciplinary-form-container .disciplinary-field-label {
+  font-weight: bold;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.disciplinary-form-container .numbered-label {
+  font-weight: bold;
+  width: 250px;
+  min-width: 250px;
+  padding-right: 15px;
+  font-size: 14px;
+}
+
+.disciplinary-form-container .disciplinary-numbered-label {
+  font-weight: bold;
+  width: 250px;
+  min-width: 250px;
+  padding-right: 15px;
+  font-size: 14px;
+}
+
+.disciplinary-form-container .field-input-cell {
+  padding: 5px;
+}
+
+.disciplinary-form-container .disciplinary-input-cell {
+  padding: 5px;
+}
+
+.disciplinary-form-container .large-input-cell {
+  width: 100%;
+}
+
+.disciplinary-form-container .disciplinary-large-input-cell {
+  width: 100%;
+}
+
+/* Input Fields */
+.disciplinary-form-container .field-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+.disciplinary-form-container .disciplinary-field-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.disciplinary-form-container .large-input {
+  font-size: 15px;
+}
+
+.disciplinary-form-container .disciplinary-large-input {
+  font-size: 15px;
+}
+
+.disciplinary-form-container .tall-input {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.disciplinary-form-container .disciplinary-tall-input {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ========================================================================= */
+/* DYNAMIC LIST INPUT                                                        */
+/* ========================================================================= */
+.disciplinary-form-container .list-input-group {
+  margin: 25px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.disciplinary-form-container .disciplinary-list-input-group {
+  margin: 25px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.disciplinary-form-container .list-label {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.disciplinary-form-container .disciplinary-list-label {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #333;
+}
+
+.disciplinary-form-container .list-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 5px 0;
+}
+
+.disciplinary-form-container .disciplinary-list-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 5px 0;
+}
+
+.disciplinary-form-container .list-item span {
+  min-width: 30px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.disciplinary-form-container .disciplinary-list-item span {
+  min-width: 30px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.disciplinary-form-container .list-item input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+.disciplinary-form-container .disciplinary-list-item input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+/* ========================================================================= */
+/* ADD ROW BUTTON                                                            */
+/* ========================================================================= */
+.disciplinary-form-container .add-row-button {
+  display: block;
+  margin: 15px 0 5px auto;
+  padding: 8px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.disciplinary-form-container .disciplinary-add-row-button {
+  display: block;
+  margin: 15px 0 5px auto;
+  padding: 8px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.disciplinary-form-container .add-row-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.disciplinary-form-container .disciplinary-add-row-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.disciplinary-form-container .add-row-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.disciplinary-form-container .disciplinary-add-row-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* ========================================================================= */
+/* TEXTAREAS                                                                */
+/* ========================================================================= */
+.disciplinary-form-container textarea.field-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 80px;
+  line-height: 1.5;
+}
+
+.disciplinary-form-container textarea.disciplinary-field-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 80px;
+  line-height: 1.5;
+}
+
+/* ========================================================================= */
+/* FORM ACTION BUTTONS                                                      */
+/* ========================================================================= */
+.disciplinary-form-container .form-action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px 0;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 15px;
+}
+
+.disciplinary-form-container .disciplinary-action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 30px 0;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  width: 100%;
+  gap: 15px;
+}
+
+/* Cancel button */
+.disciplinary-form-container .btn-cancel {
+  padding: 10px 25px;
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.disciplinary-form-container .disciplinary-cancel-button {
+  padding: 10px 25px;
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.disciplinary-form-container .btn-cancel:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+.disciplinary-form-container .disciplinary-cancel-button:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+/* Submit button */
+.disciplinary-form-container .btn-submit {
+  padding: 10px 25px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.disciplinary-form-container .disciplinary-submit-button {
+  padding: 10px 25px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.disciplinary-form-container .btn-submit:hover:not(:disabled) {
+  background-color: #0052a3;
+}
+
+.disciplinary-form-container .disciplinary-submit-button:hover:not(:disabled) {
+  background-color: #0052a3;
+}
+
+.disciplinary-form-container .btn-cancel:disabled, 
+.disciplinary-form-container .btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.disciplinary-form-container .disciplinary-cancel-button:disabled, 
+.disciplinary-form-container .disciplinary-submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ========================================================================= */
+/* ERROR AND SUCCESS MESSAGES                                               */
+/* ========================================================================= */
+.disciplinary-form-container .form-error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  border-left: 4px solid #c62828;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.disciplinary-form-container .disciplinary-error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  border-left: 4px solid #c62828;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.disciplinary-form-container .form-error-message .close-error {
+  background: none;
+  border: none;
+  color: #c62828;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+  line-height: 1;
+}
+
+.disciplinary-form-container .disciplinary-error-message .disciplinary-close-error {
+  background: none;
+  border: none;
+  color: #c62828;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+  line-height: 1;
+}
+
+.disciplinary-form-container .form-success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  border-left: 4px solid #2e7d32;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.disciplinary-form-container .disciplinary-success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  border-left: 4px solid #2e7d32;
+  font-size: 14px;
+}
+
+/* ========================================================================= */
+/* FOOTER NOTES                                                             */
+/* ========================================================================= */
+.disciplinary-form-container .footer-notes {
+  border: 3px solid #333;
+  margin: 20px 0 30px;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 12px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.disciplinary-form-container .disciplinary-footer-notes {
+  border: 3px solid #333;
+  margin: 20px 0 30px;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #f8f8f8;
+}
+
+.disciplinary-form-container .amharic-note {
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.disciplinary-form-container .disciplinary-amharic-note {
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.disciplinary-form-container .english-note {
+  font-weight: bold;
+  margin: 0;
+  color: #cc0000;
+}
+
+.disciplinary-form-container .disciplinary-english-note {
+  font-weight: bold;
+  margin: 0;
+  color: #cc0000;
+}
+
+/* ========================================================================= */
+/* PAGE NAVIGATION                                                          */
+/* ========================================================================= */
+.disciplinary-form-container .page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin: 20px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.disciplinary-form-container .disciplinary-page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  margin: 20px 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.disciplinary-form-container .nav-button {
+  padding: 10px 25px;
+  background-color: #1a4a7c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  min-width: 150px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.disciplinary-form-container .disciplinary-prev-button,
+.disciplinary-form-container .disciplinary-next-button {
+  padding: 10px 25px;
+  background-color: #1a4a7c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  min-width: 150px;
+  text-align: center;
+}
+
+.disciplinary-form-container .nav-button:hover:not(:disabled) {
+  background-color: #0052a3;
+}
+
+.disciplinary-form-container .disciplinary-prev-button:hover:not(:disabled),
+.disciplinary-form-container .disciplinary-next-button:hover:not(:disabled) {
+  background-color: #0052a3;
+}
+
+.disciplinary-form-container .nav-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.disciplinary-form-container .disciplinary-prev-button:disabled,
+.disciplinary-form-container .disciplinary-next-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ========================================================================= */
+/* RESPONSIVE STYLES                                                         */
+/* ========================================================================= */
+@media (max-width: 1250px) {
+  .disciplinary-form-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .disciplinary-form-container {
+    padding: 15px;
+  }
+  
+  .disciplinary-form-container .part-section {
+    margin: 20px 0;
+  }
+  
+  .disciplinary-form-container .page-content {
+    padding: 15px;
+  }
+  
+  .disciplinary-form-container .numbered-label {
+    width: 200px;
+    min-width: 200px;
+  }
+  
+  .disciplinary-form-container .disciplinary-numbered-label {
+    width: 200px;
+    min-width: 200px;
+  }
+  
+  .disciplinary-form-container .form-action-buttons {
+    margin: 30px 0;
+  }
+  
+  .disciplinary-form-container .footer-notes {
+    margin: 20px 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .disciplinary-form-container {
+    padding: 10px;
+  }
+  
+  .disciplinary-form-container .part-section {
+    margin: 15px 0;
+  }
+  
+  .disciplinary-form-container .page-content {
+    padding: 10px;
+  }
+  
+  .disciplinary-form-container .disciplinary-signature-table,
+  .disciplinary-form-container .disciplinary-numbered-fields-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .disciplinary-form-container .numbered-label {
+    width: 150px;
+    min-width: 150px;
+  }
+  
+  .disciplinary-form-container .disciplinary-numbered-label {
+    width: 150px;
+    min-width: 150px;
+  }
+  
+  .disciplinary-form-container .form-action-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .disciplinary-form-container .btn-cancel, 
+  .disciplinary-form-container .btn-submit {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .disciplinary-form-container .disciplinary-cancel-button,
+  .disciplinary-form-container .disciplinary-submit-button {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .disciplinary-form-container .form-error-message,
+  .disciplinary-form-container .form-success-message {
+    margin: 15px 0;
+    padding: 12px 15px;
+  }
+  
+  .disciplinary-form-container .disciplinary-error-message,
+  .disciplinary-form-container .disciplinary-success-message {
+    margin: 15px 0;
+    padding: 12px 15px;
+  }
+  
+  .disciplinary-form-container .footer-notes {
+    margin: 15px 0 20px;
+    font-size: 11px;
+  }
+  
+  .disciplinary-form-container .disciplinary-footer-notes {
+    margin: 15px 0 20px;
+    font-size: 11px;
+  }
+  
+  .disciplinary-form-container .add-row-button {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .disciplinary-form-container .disciplinary-add-row-button {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .disciplinary-form-container .page-navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .disciplinary-form-container .disciplinary-page-navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .disciplinary-form-container .nav-button {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .disciplinary-form-container .disciplinary-prev-button,
+  .disciplinary-form-container .disciplinary-next-button {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .disciplinary-form-container {
+    padding: 10px;
+  }
+  
+  .disciplinary-form-container .part-section {
+    margin: 10px 0;
+  }
+  
+  .disciplinary-form-container .page-content {
+    padding: 8px;
+  }
+  
+  .disciplinary-form-container .part-header {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  
+  .disciplinary-form-container .form-action-buttons {
+    padding: 15px 0;
+    margin: 15px 0;
+  }
+  
+  .disciplinary-form-container .checkbox-item {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .disciplinary-form-container .disciplinary-checkbox-item {
+    display: block;
+    margin-bottom: 8px;
+  }
+}

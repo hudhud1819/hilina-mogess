@@ -1,0 +1,141 @@
+.f17-document-container {
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.f17-watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 120pt;
+    color: rgba(200, 200, 200, 0.2);
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 0;
+    white-space: nowrap;
+}
+
+.f17-master-layout {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.f17-document-body {
+    width: 100%;
+    flex: 1;
+    margin-top: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.f17-field-row {
+    display: flex;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.f17-field-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.f17-label {
+    font-weight: bold;
+    font-size: 15pt;
+    padding: 10px;
+    min-width: 250px;
+    border-right: 1px solid black;
+}
+
+.f17-input-field {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 15pt;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Matches the handwriting style in image */
+    outline: none;
+}
+
+.f17-section-title {
+    font-size: 15pt;
+    margin: 25px 0 10px 0;
+    font-weight: bold;
+}
+
+.f17-audit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.f17-audit-table th, .f17-audit-table td {
+    border: 1px solid black;
+    padding: 0;
+}
+
+.f17-audit-table th {
+    padding: 10px;
+    font-size: 15pt;
+    background-color: #f9f9f9;
+}
+
+.f17-audit-table td input {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    font-size: 14pt;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.f17-signature-section {
+    display: flex;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.f17-sig-box {
+    flex: 1;
+    display: flex;
+    border-right: 1px solid black;
+}
+
+.f17-sig-box:last-child {
+    border-right: none;
+}
+
+.f17-sig-box .f17-label {
+    min-width: auto;
+    border-right: none;
+    white-space: nowrap;
+}
+
+.f17-footer-warning {
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+
+.f17-amharic {
+    font-size: 14pt;
+    margin: 0;
+}
+
+.f17-english {
+    font-size: 12pt;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+@media print {
+    .f17-document-container { padding: 0; }
+}
